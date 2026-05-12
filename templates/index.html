@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <center>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Prediction</title>
+    <h1>Water Quality Prediction</h1>
+
+</head>
+<body>
+    <form action="/predict"method="POST">
+        <!--ph,Hardness,Solids,Chloramines,Sulfate,Conductivity,Organic_carbon,Trihalomethanes,Turbidity-->
+        <label for="ph">pH:</label>
+        <input type="text" id="ph" name="ph" required><br><br>
+        <label for="hardness">Hardness:</label>
+        <input type="text" id="hardness" name="hardness" required><br><br>
+        <label for="solids">Solids:</label>
+        <input type="text" id="solids" name="solids" required><br><br>
+        <label for="chloramines">Chloramines:</label>
+        <input type="text" id="chloramines" name="chloramines" required><br><br>
+        <label for="sulfate">Sulfate:</label>
+        <input type="text" id="sulfate" name="sulfate" required><br><br>
+        <label for="conductivity">Conductivity:</label>
+        <input type="text" id="conductivity" name="conductivity" required><br><br>
+        <label for="organic_carbon">Organic Carbon:</label>
+        <input type="text" id="organic_carbon" name="organic_carbon"
+            required><br><br>
+        <label for="trihalomethanes">Trihalomethanes:</label>
+        <input type="text" id="trihalomethanes" name="trihalomethanes"
+            required><br><br>
+        <label for="turbidity">Turbidity:</label>
+        <input type="text" id="turbidity" name="turbidity" required><br><br>
+        <input type="submit" value="Predict">
+
+    </form>
+    
+</body>
+</center>
+</html>
