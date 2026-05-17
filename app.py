@@ -24,11 +24,11 @@ def predict():
 
     arr=np.array([[ph, hardness, solids, chloramines, sulfate, conductivity, organic_carbon, trihalomethanes, turbidity]])
     # Load the model
-    model=jb.load(Path("model\model_rfc.pkl"))
+    model=jb.load(Path("model/model_rfc.pkl"))
     
     # Make a prediction
     prediction=model.predict(arr)
-    if prediction==1:
+    if prediction[0]==1:
         return render_template('result.html', result='The water is safe to drink.')
     else:
         return render_template('result.html', result='The water is not safe to drink.')
